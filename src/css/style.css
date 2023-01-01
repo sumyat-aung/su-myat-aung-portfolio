@@ -1,0 +1,72 @@
+/* Tailwind */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* css code */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Intro logo animation */
+
+svg .svg-elem-1 {
+  stroke-dasharray: 803.1732788085938px;
+  transform-origin: center;
+  -webkit-animation: stroke 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1;
+  animation: stroke 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1;
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 803.1732788085938px;
+  }
+  80% {
+    transform: scale(1);
+    stroke-dashoffset: 0;
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* styling scroll-bar */
+
+::-webkit-scrollbar-thumb {
+  background-color: #495670;
+  border: 3px solid #191f2f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191f2f;
+}
+
+/* styling selection */
+
+::selection {
+  background-color: #3a4258e7;
+  color: #b3beda;
+}
+
+/* other css code */
+
+.vertical-rl {
+  writing-mode: vertical-lr;
+}
