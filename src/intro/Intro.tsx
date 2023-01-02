@@ -11,11 +11,11 @@ const Intro = () => {
         height="24"
         transform="scale(4) rotate(140)"
         viewBox="0 0 24 24"
-        stroke-width="1"
+        strokeWidth="1"
         stroke="#BDE4E6"
         fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <circle cx="9.5" cy="9.5" r="6.5" className="svg-elem-2"></circle>
         <rect

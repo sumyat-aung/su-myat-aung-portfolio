@@ -1,23 +1,23 @@
-<svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="icon icon-tabler icon-tabler-circle-square"
-        width="24"
-        height="24"
-        transform="scale(2) rotate(140)"
-        viewBox="0 0 24 24"
-        stroke-width="1"
-        stroke="#BDE4E6"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <circle cx="9.5" cy="9.5" r="6.5"></circle>
-        <rect
-          x="10"
-          y="10"
-          width="11"
-          height="11"
-          rx="2"
-          
-        ></rect>
-      </svg>
+ <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-circle-square"
+            width="24"
+            height="24"
+            transform="rotate(140)"
+            viewBox="0 0 24 24"
+            strokeWidth="1"
+            stroke="#BDE4E6"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="9.5" cy="9.5" r="6.5"></circle>
+            <rect
+              x="10"
+              y="10"
+              width="11"
+              height="11"
+              rx="2"
+              
+            ></rect>
+          </svg>
