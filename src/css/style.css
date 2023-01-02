@@ -17,25 +17,84 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Intro logo animation */
 
-svg .svg-elem-1 {
-  stroke-dasharray: 803.1732788085938px;
+.svg-elem-2 {
   transform-origin: center;
-  -webkit-animation: stroke 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1;
-  animation: stroke 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1;
+  -webkit-animation: animate-svg-stroke-2 1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0.12s both;
+  animation: animate-svg-stroke-2 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1;
 }
 
-@keyframes stroke {
+.svg-elem-3 {
+  transform-origin: center;
+  -webkit-animation: animate-svg-stroke-3 1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0.24s both;
+  animation: animate-svg-stroke-3 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s 1;
+}
+
+@-webkit-keyframes animate-svg-stroke-2 {
   0% {
-    stroke-dashoffset: 803.1732788085938px;
+    stroke-dashoffset: 83.68140899333463px;
+    stroke-dasharray: 83.68140899333463px;
   }
+
   80% {
-    transform: scale(1);
     stroke-dashoffset: 0;
+    stroke-dasharray: 83.68140899333463px;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animate-svg-stroke-2 {
+  0% {
+    stroke-dashoffset: 83.68140899333463px;
+    stroke-dasharray: 83.68140899333463px;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 83.68140899333463px;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes animate-svg-stroke-3 {
+  0% {
+    stroke-dashoffset: 82.49174499511719px;
+    stroke-dasharray: 82.49174499511719px;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 82.49174499511719px;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes animate-svg-stroke-3 {
+  0% {
+    stroke-dashoffset: 82.49174499511719px;
+    stroke-dasharray: 82.49174499511719px;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 82.49174499511719px;
+    transform: scale(1);
   }
   100% {
     transform: scale(0);

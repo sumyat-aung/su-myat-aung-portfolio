@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import Nav from "../components/Nav";
+
 import Intro from "../intro/Intro";
 import Left from "../socials/Left";
 import Right from "../socials/Right";
@@ -21,6 +23,9 @@ const App: React.FC = () => {
           <>
             <Right />
             <Left />
+          </>
+          <>
+            <Nav />
           </>
         </div>
       )}
