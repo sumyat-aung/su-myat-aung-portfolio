@@ -1,6 +1,8 @@
 import React from "react";
 
-const Contant = () => {
+// ! ^ importing ^
+
+const Contact: React.FC = () => {
   return (
     <div className="h-[100vh]" id="contact">
       Contant
@@ -8,4 +10,4 @@ const Contant = () => {
   );
 };
 
-export default Contant;
+export default Contact;

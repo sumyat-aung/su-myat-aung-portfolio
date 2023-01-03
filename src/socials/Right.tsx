@@ -6,6 +6,8 @@ import instagram from "../assets/social-icons/instagram.svg";
 import twitter from "../assets/social-icons/twitter.svg";
 import telegram from "../assets/social-icons/telegram.svg";
 
+// ! ^ importing ^
+
 const Right: React.FC = () => {
   return (
     <div className="fixed bottom-0 left-8 w-10 h-[360px] flex flex-col items-center justify-between">

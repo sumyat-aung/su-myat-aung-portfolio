@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 
 import Nav from "../components/Nav";
 
@@ -11,7 +10,9 @@ import Right from "../socials/Right";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Work from "../pages/Work";
-import Contant from "../pages/Contant";
+import Contact from "../pages/Contact";
+
+// ! ^ importing ^
 
 const App: React.FC = () => {
   // Intro showing for 3s
@@ -27,16 +28,18 @@ const App: React.FC = () => {
         <Intro />
       ) : (
         <div>
-          <>
+          <div>
             <Right />
             <Left />
-          </>
+          </div>
           <>
             <Nav />
-            <Home />
-            <About />
-            <Work />
-            <Contant />
+            <div className="mt-[80px]">
+              <Home />
+              <About />
+              <Work />
+              <Contact />
+            </div>
           </>
         </div>
       )}

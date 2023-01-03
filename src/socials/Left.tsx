@@ -1,5 +1,7 @@
 import React from "react";
 
+// ! ^ importing ^
+
 const Left: React.FC = () => {
   return (
     <div className="fixed bottom-0 right-8 w-10 h-[360px] flex flex-col items-center justify-between ">

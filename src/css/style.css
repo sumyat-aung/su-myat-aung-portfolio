@@ -21,6 +21,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  overflow: overlay;
+}
+
 /* Intro logo animation */
 
 .svg-elem-2 {
@@ -113,10 +117,6 @@
   width: 12px;
 }
 
-::-webkit-scrollbar-track {
-  background: #191f2f;
-}
-
 /* styling selection */
 
 ::selection {
@@ -128,4 +128,14 @@
 
 .vertical-rl {
   writing-mode: vertical-lr;
+}
+
+.down {
+  top: -80px;
+}
+
+.up {
+  top: 0;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(10px);
 }

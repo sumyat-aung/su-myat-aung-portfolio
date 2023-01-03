@@ -1,7 +1,8 @@
 import React from "react";
-import "../css/style.css";
 
-const Intro = () => {
+// ! ^ importing ^
+
+const Intro: React.FC = () => {
   return (
     <div className="w-[100vw] h-[100vh] bg-bg flex justify-center items-center">
       <svg
@@ -12,7 +13,7 @@ const Intro = () => {
         transform="scale(4) rotate(140)"
         viewBox="0 0 24 24"
         strokeWidth="1"
-        stroke="#BDE4E6"
+        stroke="#5FF4D1"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,6 +1,8 @@
 import React from "react";
 
-const Home = () => {
+// ! ^ importing ^
+
+const Home: React.FC = () => {
   return (
     <div className="h-[100vh]" id="home">
       Home
