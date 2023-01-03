@@ -1,16 +1,15 @@
-import { useEffect, useState, useRef } from "react";
-
-import Nav from "../components/Nav";
+import { useEffect, useState } from "react";
 
 import Intro from "../intro/Intro";
 
 import Left from "../socials/Left";
 import Right from "../socials/Right";
 
-import About from "../pages/About";
 import Home from "../pages/Home";
+import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 // ! ^ importing ^
 
@@ -28,18 +27,16 @@ const App: React.FC = () => {
         <Intro />
       ) : (
         <div>
-          <div>
+          <div className="hidden md:block">
             <Right />
             <Left />
           </div>
           <>
-            <Nav />
-            <div className="mt-[80px]">
-              <Home />
-              <About />
-              <Work />
-              <Contact />
-            </div>
+            <Home />
+            <About />
+            <Skills />
+            <Work />
+            <Contact />
           </>
         </div>
       )}

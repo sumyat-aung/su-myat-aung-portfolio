@@ -21,10 +21,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  overflow: overlay;
-}
-
 /* Intro logo animation */
 
 .svg-elem-2 {
@@ -111,6 +107,10 @@ body {
   background-color: #495670;
   border: 3px solid #191f2f;
   border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar {

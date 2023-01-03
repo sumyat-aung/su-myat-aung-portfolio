@@ -66,18 +66,18 @@ const Nav: React.FC = () => {
       </a>
       <div className="md:flex hidden">
         <a
-          href="#home"
+          href="#about"
           className="text-gray-100 font-fira pr-8 text-sm py-2 hover:text-txt"
         >
           <span className="text-txt mr-2">00.</span>
-          Home
+          About
         </a>
         <a
-          href="#about"
+          href="#skills"
           className="text-gray-100 font-fira px-8 text-sm py-2 hover:text-txt"
         >
           <span className="text-txt mr-2">01.</span>
-          About
+          Skills
         </a>
         <a
           href="#work"
@@ -109,23 +109,23 @@ const Nav: React.FC = () => {
       </div>
 
       {openNav && (
-        <div className="fixed bg-[#191f2ff3] top-0 left-0 w-[100vw] h-[100vh] justify-center items-center flex flex-col -z-10">
+        <div className="fixed bg-[#191f2ffa] top-0 left-0 w-[100vw] h-[100vh] justify-center items-center flex flex-col -z-10">
           <div className="flex flex-col">
-            <a
-              href="#home"
-              className="text-gray-100 font-fira px-8 text-sm py-2 hover:text-txt"
-              onClick={closeBar}
-            >
-              <span className="text-txt mr-2">00.</span>
-              Home
-            </a>
             <a
               href="#about"
               className="text-gray-100 font-fira px-8 text-sm py-2 hover:text-txt"
               onClick={closeBar}
             >
-              <span className="text-txt mr-2">01.</span>
+              <span className="text-txt mr-2">00.</span>
               About
+            </a>
+            <a
+              href="#skills"
+              className="text-gray-100 font-fira px-8 text-sm py-2 hover:text-txt"
+              onClick={closeBar}
+            >
+              <span className="text-txt mr-2">01.</span>
+              Skills
             </a>
             <a
               href="#work"
