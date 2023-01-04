@@ -14,7 +14,7 @@ import Admin from "../components/Admin";
 const Contact: React.FC = () => {
   return (
     <div
-      className="h-[100vh] flex flex-col justify-center items-center relative "
+      className="min-h-[100vh] flex flex-col justify-center items-center  "
       id="contact"
     >
       <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center">
@@ -27,12 +27,14 @@ const Contact: React.FC = () => {
             <div className="h-[1px] w-[70%] bg-gray-700 ml-5 my-3"></div>
           </h1>
         </div>
-        <div className="font-inter text-gray-50 opacity-60 text-lg ">
+        <div className="font-inter text-gray-400 text-lg">
           <h1>Thanks for checking in.</h1>
           <p>
             I'm currently looking for new opportunities to work with talented
-            people and companies.
+            people and companies. I'm highly adaptable and always willing to
+            learn new technologies as required by the company.
           </p>
+
           <p className="mb-24">
             If you think I might be a good fit for your team or you just want to
             learn more about what I do, don't hesitate to reach out via email at

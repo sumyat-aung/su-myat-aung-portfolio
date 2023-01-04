@@ -144,8 +144,9 @@
 
 @media all and (max-height: 750px) {
   #about,
-  #skills {
-    height: 120vh;
+  #skills,
+  #contact {
+    height: 130vh;
   }
 }
 
