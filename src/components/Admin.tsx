@@ -1,6 +1,6 @@
 import React from "react";
 
-const Admin = () => {
+const Admin: React.FC = () => {
   return (
     <a
       className="w-full text-gray-50 font-fira no-underline hover:text-txt flex items-center justify-center text-sm font-extralight cursor-default md:cursor-pointer"

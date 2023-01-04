@@ -7,9 +7,9 @@ import close from "../assets/logo/x.svg";
 
 const Nav: React.FC = () => {
   //showing nav bar on scroll up
-  const [scrollDirection, setScrollDirection] = useState("up");
+  const [scrollDirection, setScrollDirection] = useState<string>("up");
   useEffect(() => {
-    let lastScrollTop = 0;
+    let lastScrollTop: number = 0;
     function handleScroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
   }, []);
 
   //responsive nav-bar open, close state
-  const [openNav, setOpenNav] = useState(false);
+  const [openNav, setOpenNav] = useState<boolean>(false);
 
   //  disabled scrolling when the nav is open
   const toggleBodyOverflow = () => {

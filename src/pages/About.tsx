@@ -1,6 +1,8 @@
 import React from "react";
 import banner from "../assets/image/banner.png";
 
+// ! ^ importing ^
+
 const About: React.FC = () => {
   return (
     <div id="about" className="flex justify-center items-center min-h-[100vh]">
