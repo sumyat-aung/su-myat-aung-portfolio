@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import Nav from "../components/Nav";
 
 // ! ^ importing ^
@@ -7,7 +9,12 @@ const Home: React.FC = () => {
   return (
     <div className="h-[100vh] flex justify-center items-center" id="home">
       <Nav />
-      <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]">
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", delay: 1, duration: 0.8 }}
+        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"
+      >
         <p className="text-txt font-fira "> Hi, my name is, </p>
         <h4 className="lg:text-7xl sm:text-5xl text-3xl font-bold text-gray-300">
           Su Myat Aung.
@@ -31,7 +38,7 @@ const Home: React.FC = () => {
         >
           Resume
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

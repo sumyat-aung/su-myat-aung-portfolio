@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import arrow from "../assets/logo/arrow.svg";
 

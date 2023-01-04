@@ -1,12 +1,19 @@
 import React from "react";
 import banner from "../assets/image/banner.png";
 
+import { motion } from "framer-motion";
+
 // ! ^ importing ^
 
 const About: React.FC = () => {
   return (
     <div id="about" className="flex justify-center items-center min-h-[100vh]">
-      <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"
+      >
         <p className="text-txt mr-2 text-3xl font-semibold font-fira mb-4">
           00.{" "}
         </p>
@@ -49,7 +56,7 @@ const About: React.FC = () => {
           power to magically transform coffee into code (or at least, that's
           what I tell myself to get through long coding sessions).
         </article>
-      </div>
+      </motion.div>
     </div>
   );
 };

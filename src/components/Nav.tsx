@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import bar from "../assets/logo/align-right.svg";
 import close from "../assets/logo/x.svg";
@@ -41,8 +42,11 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <div
-      className={`bg-[#191f2fe0] w-full flex justify-between px-[50px] h-[80px] items-center fixed transition-all ${scrollDirection}`}
+    <motion.div
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", duration: 0.6 }}
+      className={`bg-[#191f2fe0] w-full flex justify-between px-[50px] h-[80px] items-center fixed transition-all ${scrollDirection} z-50`}
     >
       <a href="#home" onClick={closeBar}>
         <div className="ml-4s">
@@ -146,7 +150,7 @@ const Nav: React.FC = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

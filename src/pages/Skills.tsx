@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import html from "../assets/tech/html.svg";
 import css from "../assets/tech/css.svg";
@@ -18,7 +19,12 @@ import node from "../assets/tech/nodejs-icon.svg";
 const Skills: React.FC = () => {
   return (
     <div className="min-h-[100vh] flex justify-center items-center" id="skills">
-      <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]">
+      <motion.div
+        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <p className="text-txt mr-2 text-3xl font-semibold font-fira mb-4">
           01.{" "}
         </p>
@@ -122,7 +128,7 @@ const Skills: React.FC = () => {
             </div>
           </>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
