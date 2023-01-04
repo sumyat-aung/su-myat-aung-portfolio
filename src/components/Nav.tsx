@@ -44,7 +44,7 @@ const Nav: React.FC = () => {
     <div
       className={`bg-[#191f2fe0] w-full flex justify-between px-[50px] h-[80px] items-center fixed transition-all ${scrollDirection}`}
     >
-      <a href="#home">
+      <a href="#home" onClick={closeBar}>
         <div className="ml-4s">
           <svg
             xmlns="http://www.w3.org/2000/svg"

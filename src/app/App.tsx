@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <Intro />
       ) : (
         <div>
-          <div className="hidden md:block">
+          <div className="hidden md:block relative z-50">
             <Right />
             <Left />
           </div>

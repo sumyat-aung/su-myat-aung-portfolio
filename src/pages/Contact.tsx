@@ -14,7 +14,7 @@ import Admin from "../components/Admin";
 const Contact: React.FC = () => {
   return (
     <div
-      className="h-[100vh] flex flex-col justify-center items-center relative"
+      className="h-[100vh] flex flex-col justify-center items-center relative "
       id="contact"
     >
       <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center">
