@@ -3,7 +3,7 @@ import banner from "../assets/image/banner.png";
 
 const About: React.FC = () => {
   return (
-    <div id="about" className="h-[100vh] flex justify-center items-center">
+    <div id="about" className="flex justify-center items-center min-h-[100vh]">
       <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]">
         <p className="text-txt mr-2 text-3xl font-semibold font-fira mb-4">
           00.{" "}
@@ -40,7 +40,7 @@ const About: React.FC = () => {
             </article>
           </p>
         </div>
-        <img src={banner} alt="banner" className="mt-8 shadow" />
+        <img src={banner} alt="banner" className="mt-8 shadow opacity-30" />
       </div>
     </div>
   );
