@@ -7,13 +7,14 @@ import linkedin from "../assets/social-icons/linkedin.svg";
 import instagram from "../assets/social-icons/instagram.svg";
 import twitter from "../assets/social-icons/twitter.svg";
 import telegram from "../assets/social-icons/telegram.svg";
+import Admin from "../components/Admin";
 
 // ! ^ importing ^
 
 const Contact: React.FC = () => {
   return (
     <div
-      className="h-[100vh] flex justify-center items-center relative"
+      className="h-[100vh] flex flex-col justify-center items-center relative"
       id="contact"
     >
       <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center">
@@ -96,6 +97,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
+      <Admin />
     </div>
   );
 };

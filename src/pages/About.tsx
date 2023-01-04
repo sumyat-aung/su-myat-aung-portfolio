@@ -13,7 +13,7 @@ const About: React.FC = () => {
             About me
             <div className="h-[1px] w-[40%] ::after bg-gray-700 ml-5"></div>
           </h1>
-          <p className="text-[#d1d3d6be] mt-5 font-inter ">
+          <div className="text-[#d1d3d6be] mt-5 font-inter ">
             <article className="my-3">
               Hello! My name is{" "}
               <span className="text-txt font-fira"> Su Myat Aung</span> and I
@@ -38,7 +38,7 @@ const About: React.FC = () => {
                 (spoiler alert: they usually have)
               </span>
             </article>
-          </p>
+          </div>
         </div>
         <img src={banner} alt="banner" className="mt-8 shadow opacity-30" />
       </div>
