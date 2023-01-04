@@ -148,3 +148,9 @@
     height: 120vh;
   }
 }
+
+@media (hover: none) {
+  a {
+    cursor: default;
+  }
+}
