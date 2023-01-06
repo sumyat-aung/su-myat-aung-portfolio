@@ -21,7 +21,6 @@ const App: React.FC = () => {
     setTimeout(() => setIntro(false), 3000);
   }, []);
 
-
   return (
     <>
       {intro ? (
