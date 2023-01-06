@@ -12,7 +12,8 @@ const Nav: React.FC = () => {
   useEffect(() => {
     let lastScrollTop: number = 0;
     function handleScroll() {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let scrollTop: number =
+        window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
         setScrollDirection("down");
       } else {
@@ -113,7 +114,7 @@ const Nav: React.FC = () => {
       </div>
 
       {openNav && (
-        <div className="fixed bg-[#191f2ffa] top-0 left-0 w-[100vw] h-[100vh] justify-center items-center flex flex-col -z-10">
+        <div className="fixed bg-[#191f2ffa] top-0 left-0 w-[100vw] h-[100vh] justify-center items-center flex flex-col -z-10 ani">
           <div className="flex flex-col">
             <a
               href="#about"

@@ -7,7 +7,7 @@ import github from "../assets/social-icons/github.svg";
 import linkedin from "../assets/social-icons/linkedin.svg";
 import instagram from "../assets/social-icons/instagram.svg";
 import twitter from "../assets/social-icons/twitter.svg";
-import telegram from "../assets/social-icons/telegram.svg";
+import skype from "../assets/social-icons/skype.svg";
 import Admin from "../components/Admin";
 
 // ! ^ importing ^
@@ -64,37 +64,42 @@ const Contact: React.FC = () => {
           <div className="md:hidden flex flex-col justify-between  items-center">
             <div className="flex  items-center justify-center gap-10 w-full my-10">
               <a
-                href="#"
+                href="https://github.com/sumyat-aung"
                 className="w-5 h-5 hover:-translate-y-1 transition-all"
+                target={"_blank"}
               >
                 <img src={github} alt="github" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sumyat-aung/"
                 className="w-5 h-5 hover:-translate-y-1 transition-all"
+                target={"_blank"}
               >
                 <img src={linkedin} alt="linkedin" />
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/sumyat_1584/"
                 className="w-5 h-5 hover:-translate-y-1 transition-all"
+                target={"_blank"}
               >
                 <img src={instagram} alt="instagram" />
               </a>
 
               <a
-                href="#"
+                href="https://twitter.com/sumyat1584"
                 className="w-5 h-5 hover:-translate-y-1 transition-all"
+                target={"_blank"}
               >
                 <img src={twitter} alt="twitter" />
               </a>
 
               <a
-                href="#"
+                href="https://join.skype.com/invite/oWh1zqCi6fIQ"
                 className="w-5 h-5 hover:-translate-y-1 transition-all"
+                target={"_blank"}
               >
-                <img src={telegram} alt="telegram" />
+                <img src={skype} alt="skype" />
               </a>
             </div>
           </div>

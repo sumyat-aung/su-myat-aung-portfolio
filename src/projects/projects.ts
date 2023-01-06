@@ -1,0 +1,3 @@
+const p: [] = []
+
+export { p }

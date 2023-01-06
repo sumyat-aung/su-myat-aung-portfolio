@@ -15,7 +15,7 @@ import About from "../pages/About";
 
 const App: React.FC = () => {
   // Intro showing for 3s
-  const [intro, setIntro] = useState(false);
+  const [intro, setIntro] = useState<boolean>(false);
   useEffect(() => {
     setIntro(true);
     setTimeout(() => setIntro(false), 3000);
