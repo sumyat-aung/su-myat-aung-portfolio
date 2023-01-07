@@ -10,6 +10,8 @@ import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Projects from "../pages/Projects";
 
 // ! ^ importing ^
 
@@ -31,13 +33,23 @@ const App: React.FC = () => {
             <Right />
             <Left />
           </div>
-          <>
-            <Home />
-            <About />
-            <Skills />
-            <Work />
-            <Contact />
-          </>
+
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <About />
+                  <Skills />
+                  <Work />
+                  <Contact />
+                </>
+              }
+            />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Navigate to={"/"} />} />
+          </Routes>
         </div>
       )}
     </>
