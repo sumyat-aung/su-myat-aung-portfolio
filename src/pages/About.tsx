@@ -7,9 +7,12 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <div id="about" className="flex justify-center items-center min-h-[100vh]">
+    <div
+      id="about"
+      className="flex justify-center items-center min-h-[100vh] sm:py-0 py-[50px]"
+    >
       <motion.div
-        initial={{ y: 50, opacity: 0 }}
+        initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
         className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"

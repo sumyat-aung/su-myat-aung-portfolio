@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import arrow from "../assets/logo/arrow.svg";
-
 import github from "../assets/social-icons/github.svg";
 import linkedin from "../assets/social-icons/linkedin.svg";
 import instagram from "../assets/social-icons/instagram.svg";
@@ -15,10 +13,15 @@ import Admin from "../components/Admin";
 const Contact: React.FC = () => {
   return (
     <div
-      className="min-h-[100vh] flex flex-col justify-center items-center  "
+      className="min-h-[100vh] flex flex-col justify-center items-center  sm:py-0 py-[50px]"
       id="contact"
     >
-      <div className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center">
+      <motion.div
+        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center"
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
         <p className="text-txt mr-2 text-3xl font-semibold font-fira mb-4">
           03.{" "}
         </p>
@@ -47,19 +50,6 @@ const Contact: React.FC = () => {
             </a>
             or anywhere you feel comfortable to contact.
           </p>
-          <div className="mt-10 md:block hidden">
-            <img
-              src={arrow}
-              alt="arrow"
-              className="xl:h-[200px] sm:h-[120px] xl:left-[270px] sm:left-[150px] rotate-[240deg] absolute"
-            />
-
-            <img
-              src={arrow}
-              alt="arrow"
-              className="xl:h-[200px] sm:h-[120px] xl:right-[270px] sm:right-[150px] absolute rotate-[44deg]"
-            />
-          </div>
 
           <div className="md:hidden flex flex-col justify-between  items-center">
             <div className="flex  items-center justify-center gap-10 w-full my-10">
@@ -104,7 +94,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Admin />
     </div>
   );

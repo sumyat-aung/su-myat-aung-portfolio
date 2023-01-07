@@ -18,10 +18,13 @@ import node from "../assets/tech/nodejs-icon.svg";
 
 const Skills: React.FC = () => {
   return (
-    <div className="min-h-[100vh] flex justify-center items-center" id="skills">
+    <div
+      className="min-h-[100vh] flex justify-center items-center sm:py-0 py-[50px]"
+      id="skills"
+    >
       <motion.div
         className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"
-        initial={{ y: 50, opacity: 0 }}
+        initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
@@ -57,7 +60,7 @@ const Skills: React.FC = () => {
 
               <div className="flex font-fira items-center text-gray-300">
                 <img src={redux} alt="html" className="w-[20px] mr-2" />
-                React Redux
+                React-Redux
               </div>
 
               <div className="flex font-fira items-center text-gray-300">
