@@ -13,9 +13,7 @@ module.exports = {
 
     fontFamily: {
       fira: ["'Fira Code'", "monospace"],
-      roboto: ["'Roboto Mono'", "monospace"],
       inter: ["'Inter'", "sans-serif"],
-      mon: ["'Montserrat'", "sans-serif"],
     },
   },
   plugins: [],
