@@ -7,6 +7,7 @@ import close from "../assets/logo/x.svg";
 // ! ^ importing ^
 
 const Nav: React.FC = () => {
+
   //showing nav bar on scroll up
   const [scrollDirection, setScrollDirection] = useState<string>("up");
   useEffect(() => {
@@ -41,6 +42,20 @@ const Nav: React.FC = () => {
   const closeBar = () => {
     setOpenNav(false);
   };
+
+    // closing nav-bar on big screensize
+    useEffect(() => {
+      function handleResize() {
+        if (window.innerWidth > 768) {
+          closeBar()
+        }
+      }
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+    
 
   return (
     <motion.div
