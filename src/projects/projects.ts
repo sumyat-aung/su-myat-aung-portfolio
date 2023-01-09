@@ -78,5 +78,23 @@ const project: projectType[] = [
     }
 ]
 
+export interface miniProjectType {
+    id: number
+    code: string;
+    url: string;
+    title: string;
+    lang: string;
+}
 
-export { project }
+const MiniProjects = [
+    {
+        id: 0,
+        code: '',
+        url: '',
+        title: '',
+        lang: ''
+    }
+]
+
+
+export { project, MiniProjects }

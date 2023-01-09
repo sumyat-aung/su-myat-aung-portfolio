@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import Intro from "../intro/Intro";
 
@@ -10,8 +11,7 @@ import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
-import { Navigate, Route, Routes } from "react-router-dom";
-import Projects from "../pages/Projects";
+import ProjectsPage from "../pages/ProjectsPage";
 
 // ! ^ importing ^
 
@@ -47,7 +47,7 @@ const App: React.FC = () => {
                 </>
               }
             />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>
         </div>
