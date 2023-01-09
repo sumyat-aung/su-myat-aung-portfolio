@@ -1,14 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { MiniProjects } from "../projects/projects";
+import { useEffect } from "react";
 
 // ! ^ importing ^
 
 const ProjectsPage: React.FC = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="flex justify-center min-h-[100vh] py-10 border">
-      <div className="xl:w-[1100px] lg:w-[800px] md:w-[620px] w-[90vw] border">
+    <div className="flex justify-center min-h-[100vh] py-10">
+      <div className="xl:w-[1100px] lg:w-[800px] md:w-[620px] w-[90vw]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -31,26 +37,29 @@ const ProjectsPage: React.FC = () => {
         </h1>
         <div className="h-[1px] w-[100%] ::after bg-gray-700 my-5"></div>
 
-        <div className="border w-full h-[400px] my-10 flex flex-col justify-center items-center gap-5">
-          {[0, 1, 2, 3, 4, 5].map((n) => {
+        <div className="w-full my-10 flex flex-col justify-center items-center gap-5">
+          {MiniProjects.map((p) => {
             return (
-              <div className="hover:bg-[#22293d57] w-full h-[100px] flex justify-between items-center px-5">
-                <h1 className="text-gray-50 text-lg font-inter">
-                  Speed Typing Game
+              <div
+                key={p?.id}
+                className="hover:bg-[#22293d57] w-full sm:py-5 py-10 flex sm:flex-row flex-col justify-between items-center px-5 animate-slideup"
+              >
+                <h1 className="text-gray-50 text-lg lg:w-[30%] sm:w-[40%] w-full font-fira text-sm">
+                  {p?.title}
                 </h1>
-                <p className="text-gray-400 font-fira text-xs">
-                  HTML . CSS . JS
+                <p className="text-gray-400 font-fira text-xs sm:w-[18%] w-full ">
+                  {p?.lang}
                 </p>
-                <div className="flex gap-5">
+                <div className="flex gap-5 sm:w-auto w-full justify-end">
                   <a
-                    href={"google.com"}
-                    className="hover:-translate-y-1 transition-all"
+                    href={p?.code}
+                    className="hover:-translate-y-[2px] transition-all"
                     target={"_blank"}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#5FF4D1"
@@ -64,14 +73,14 @@ const ProjectsPage: React.FC = () => {
                   </a>
 
                   <a
-                    href={"www.google.com"}
-                    className="hover:-translate-y-1 transition-all"
+                    href={p?.url}
+                    className="hover:-translate-y-[2px] transition-all"
                     target={"_blank"}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#5FF4D1"
@@ -90,6 +99,13 @@ const ProjectsPage: React.FC = () => {
             );
           })}
         </div>
+        <a
+          href="https://github.com/sumyat-aung"
+          target={"_blank"}
+          className="font-fira text-txt text-sm w-[100%] inline-block text-right px-5 mt-10 hover:underline "
+        >
+          Check Github
+        </a>
       </div>
     </div>
   );

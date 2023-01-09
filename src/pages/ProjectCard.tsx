@@ -3,7 +3,7 @@ import { projectType } from "../projects/projects";
 
 const ProjectCard = ({ p }: { key: number; p: projectType }) => {
   return (
-    <div className=" my-10 w-full shadow-md relative bg-[#22293d57]">
+    <div className=" my-10 w-full shadow-md relative bg-[#22293d57] animate-slideup">
       <a
         href={p?.url}
         className="w-full relative inline-block"

@@ -22,7 +22,7 @@ const Work: React.FC = () => {
             <div className="h-[1px] w-[20%] sm:w-[40%] ::after bg-gray-700 ml-5"></div>
           </h1>
         </div>
-        <div className=" w-full flex flex-col">
+        <div className="w-full flex flex-col">
           {project.map((p: projectType) => {
             return <ProjectCard key={p?.id} p={p} />;
           })}

@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
             <div className="h-[1px] w-[70%] bg-gray-700 ml-5 my-3"></div>
           </h1>
         </div>
-        <div className="font-inter text-gray-400 text-lg">
+        <div className="font-inter text-gray-400 text-md sm:text-lg">
           <h1>Thanks for checking in.</h1>
           <p>
             I'm currently looking for new opportunities to work with talented

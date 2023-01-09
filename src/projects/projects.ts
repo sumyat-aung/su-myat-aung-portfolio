@@ -89,11 +89,89 @@ export interface miniProjectType {
 const MiniProjects = [
     {
         id: 0,
-        code: '',
-        url: '',
-        title: '',
-        lang: ''
-    }
+        code: 'https://github.com/sumyat-aung/glossary',
+        url: 'https://glossary.netlify.app/',
+        title: 'Dictionary app (GLOSSARY)',
+        lang: 'React • Tailwind'
+    },
+    {
+        id: 1,
+        code: 'https://github.com/sumyat-aung/speed-typing-game',
+        url: 'https://speedtyping-by-sumyat.netlify.app/',
+        title: 'Speed Typing Game',
+        lang: 'React • CSS'
+    },
+    {
+        id: 2,
+        code: 'https://github.com/sumyat-aung/tenzies',
+        url: 'https://tenzies-by-sumyat.netlify.app/',
+        title: 'Tenzies Game',
+        lang: 'React • CSS'
+    },
+    {
+        id: 3,
+        code: 'https://github.com/sumyat-aung/meme-generator',
+        url: 'https://memesgenerator-by-sumyat.netlify.app/',
+        title: 'Meme Generator',
+        lang: 'React • CSS'
+    },
+    {
+        id: 4,
+        code: 'https://github.com/sumyat-aung/travel-journal',
+        url: 'https://traveljournal-by-sumyat.netlify.app/',
+        title: 'Travel Journal',
+        lang: 'React • CSS'
+    },
+    {
+        id: 5,
+        code: 'https://github.com/sumyat-aung/music-player',
+        url: 'https://musicplayer-by-sumyat.netlify.app/',
+        title: 'Mini Music Player',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 6,
+        code: 'https://github.com/sumyat-aung/password-generator',
+        url: 'https://passwordgenerator-by-sumyat.netlify.app/',
+        title: 'Password Generator',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 7,
+        code: 'https://github.com/sumyat-aung/rock-paper-scissors',
+        url: 'https://rockpaperscissors-by-sumyat.netlify.app/',
+        title: 'Rock, Paper, Scissors',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 8,
+        code: 'https://github.com/sumyat-aung/advice-generator',
+        url: 'https://advicegenerator-by-sumyat.netlify.app/',
+        title: 'Advice Generator',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 9,
+        code: 'https://github.com/sumyat-aung/edie-web-services',
+        url: 'https://ediewebservices-by-sumyat.netlify.app/',
+        title: 'Web Service Landing Page',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 10,
+        code: 'https://github.com/sumyat-aung/quote-generator',
+        url: 'https://quotegenerator-by-sumyat.netlify.app/',
+        title: 'Quote Generator',
+        lang: 'HTML • CSS • JS '
+    },
+    {
+        id: 11,
+        code: 'https://github.com/sumyat-aung/to-do-list',
+        url: 'https://todolist-by-sumyat.netlify.app/',
+        title: 'To do list',
+        lang: 'HTML • CSS • JS '
+    },
+
 ]
 
 
