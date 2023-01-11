@@ -1,6 +1,8 @@
 import React from "react";
 import { projectType } from "../projects/projects";
 
+// ! ^ importing ^
+
 const ProjectCard = ({ p }: { key: number; p: projectType }) => {
   return (
     <div className=" my-10 w-full shadow-md relative bg-[#22293d57] animate-slideup">
@@ -10,7 +12,7 @@ const ProjectCard = ({ p }: { key: number; p: projectType }) => {
         target={"_blank"}
       >
         <img src={`${p?.img}`} alt={p?.title} className="w-full rounded" />
-        <div className="w-full h-full absolute top-0 left-0 bg-[#00081b] rounded opacity-20 transition-all z-50 hover:opacity-0"></div>
+        <div className="w-full h-full absolute top-0 left-0 bg-[#00081b] rounded opacity-20 transition-all z-10 hover:opacity-0"></div>
       </a>
       <div className="w-full  p-5 text-gray-50">
         <a

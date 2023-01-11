@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
       id="contact"
     >
       <motion.div
-        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw] text-center"
+        className="mx-0 my-auto lg:w-[800px] md:w-[620px] w-[90vw]"
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
@@ -26,9 +26,9 @@ const Contact: React.FC = () => {
           03.{" "}
         </p>
         <div>
-          <h1 className="text-gray-300 font-semibold flex flex-col items-center text-2xl font-fira my-5">
+          <h1 className="text-gray-300 font-semibold flex flex-col text-2xl font-fira my-5">
             Get in touch!
-            <div className="h-[1px] w-[70%] bg-gray-700 ml-5 my-3"></div>
+            <div className="h-[1px] w-[100%] bg-gray-700 my-3"></div>
           </h1>
         </div>
         <div className="font-inter text-gray-400 text-md sm:text-lg">

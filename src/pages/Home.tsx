@@ -33,7 +33,8 @@ const Home: React.FC = () => {
           using Node.js.
         </p>
         <a
-          href="#"
+          href="./resume.pdf"
+          target={"_blank"}
           className="font-fira text-txt border border-txt hover:bg-[#5ff4d11a] mt-10 py-3 px-10 rounded-md inline-block"
         >
           Resume
