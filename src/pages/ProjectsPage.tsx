@@ -33,7 +33,7 @@ const ProjectsPage: React.FC = () => {
         </svg>
 
         <h1 className="text-gray-300 font-semibold flex items-center text-2xl font-fira">
-          Some of the things I've worked on during my lerning journey.
+          Some of the things I've worked on during my learning journey.
         </h1>
         <div className="h-[1px] w-[100%] ::after bg-gray-700 my-5"></div>
 
