@@ -55,8 +55,7 @@ const About: React.FC = () => {
         <img src={banner} alt="banner" className="mt-8 shadow" />
 
         <article className="text-[#d1d3d6be] mt-5 font-inter ">
-          <span className="font-fira text-txt mr-3">Fun Fact:</span>I have super
-          power to magically transform coffee into code (or at least, that's
+          <span className="font-fira text-txt mr-3">Fun Fact:</span> My super power is magically transforming coffee into code (or at least, that's
           what I tell myself to get through long coding sessions).
         </article>
       </motion.div>

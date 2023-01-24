@@ -32,7 +32,7 @@ const project: projectType[] = [
         url: "https://trlc.netlify.app/",
         title: "Translucent Food eCommerce",
         des: "Translucent (Food eCommerce) is an online platform that allows users to purchase food items from local restaurants. It features an easy-to-use interface that enables users to browse menus, add items to their cart, and complete their purchase through a secure checkout process.",
-        lang: ["React", "TailwindCSS", "Styled-components", "CommereceJS"],
+        lang: ["React", "TailwindCSS", "Styled-components", "CommerceJS"],
         img: trasnslucent,
 
     },
@@ -71,7 +71,7 @@ const project: projectType[] = [
         code: "https://github.com/sumyat-aung/markdown-supported-notes-app",
         url: "https://mindmapnotes.netlify.app/",
         title: "Mindmap (Markdown supported notes app)",
-        des: "Note Taking Web App that provides users with an easy-to-use and intuitive way to store, organize and manage their notes. The app is built with robust CRUD capabilities and is markdown supported, allowing users to easily format their notes",
+        des: "Note Taking Web App that provides users with an easy-to-use and intuitive way to store, organize and manage their notes. The app is built with robust CRUD capabilities and is markdown supported, allowing users to easily format their notes.",
         lang: ["TypeScript", "React", "TailwindCSS"],
         img: notes,
 
