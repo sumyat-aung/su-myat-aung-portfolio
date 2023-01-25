@@ -19,6 +19,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+@layer base {
+  * {
+    @apply focus:outline-dashed outline-2 outline-offset-4 outline-txt;
+  }
+}
+
 /* Intro logo animation */
 
 .svg-elem-2 {
