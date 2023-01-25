@@ -1,12 +1,12 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from "react"
+import { motion } from "framer-motion"
 
-import github from "../assets/social-icons/github.svg";
-import linkedin from "../assets/social-icons/linkedin.svg";
-import instagram from "../assets/social-icons/instagram.svg";
-import twitter from "../assets/social-icons/twitter.svg";
-import skype from "../assets/social-icons/skype.svg";
-import Admin from "../components/Admin";
+import github from "../assets/social-icons/github.svg"
+import linkedin from "../assets/social-icons/linkedin.svg"
+import instagram from "../assets/social-icons/instagram.svg"
+import twitter from "../assets/social-icons/twitter.svg"
+import skype from "../assets/social-icons/skype.svg"
+import Admin from "../components/Admin"
 
 // ! ^ importing ^
 
@@ -44,9 +44,12 @@ const Contact: React.FC = () => {
             learn more about what I do, don't hesitate to reach out via email at
             <a
               href="mailto: sumyataung1584@gmail.com"
-              className="text-txt font-fira hover:-translate-y-[2px] transition-all mx-3 inline-block"
+              className="text-txt font-fira transition-all mx-3 inline-block group"
             >
-              sumyataung1584@gmail.com
+              <span className="relative w-fit">
+                sumyataung1584@gmail.com
+                <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 group-hover:w-full group-focus:w-full bg-txt duration-300"></span>
+              </span>
             </a>
             or anywhere you feel comfortable to contact.
           </p>
@@ -97,7 +100,7 @@ const Contact: React.FC = () => {
       </motion.div>
       <Admin />
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

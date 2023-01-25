@@ -14,7 +14,7 @@ const Left: React.FC = () => {
     >
       <a
         href="mailto: sumyataung1584@gmail.com"
-        className="text-txt2 font-fira vertical-rl tracking-widest inline-block text-sm hover:-translate-y-1 transition-all"
+        className="text-txt2 font-fira vertical-rl tracking-widest inline-block text-sm hover:-translate-y-1 hover:text-txt focus:text-txt transition-all"
       >
         sumyataung1584@gmail.com
       </a>

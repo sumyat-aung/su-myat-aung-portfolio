@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import { motion } from "framer-motion";
 
 import github from "../assets/social-icons/github.svg";
@@ -21,40 +22,40 @@ const Right: React.FC = () => {
         <a
           href="https://github.com/sumyat-aung"
           target={"_blank"}
-          className="w-5 h-5 hover:-translate-y-1 transition-all"
+          className="w-5 h-5 hover:-translate-y-1 transition-all group"
         >
-          <img src={github} alt="github" />
+          <Icon icon='lucide:github' className="text-txt2 group-hover:text-txt group-focus:text-txt" height={20} width={20}/>
         </a>
         <a
           href="https://www.linkedin.com/in/sumyat-aung/"
-          className="w-5 h-5 hover:-translate-y-1 transition-all"
+          className="w-5 h-5 hover:-translate-y-1 transition-all group"
           target={"_blank"}
         >
-          <img src={linkedin} alt="linkedin" />
+           <Icon icon='lucide:linkedin' className="text-txt2 group-hover:text-txt group-focus:text-txt" height={20} width={20}/>
         </a>
 
         <a
           href="https://www.instagram.com/sumyat_1584/"
-          className="w-5 h-5 hover:-translate-y-1 transition-all"
+          className="w-5 h-5 hover:-translate-y-1 transition-all group"
           target={"_blank"}
         >
-          <img src={instagram} alt="instagram" />
+            <Icon icon='lucide:instagram' className="text-txt2 group-hover:text-txt group-focus:text-txt" height={20} width={20}/>
         </a>
 
         <a
           href="https://twitter.com/sumyat1584"
-          className="w-5 h-5 hover:-translate-y-1 transition-all"
+          className="w-5 h-5 hover:-translate-y-1 transition-all group"
           target={"_blank"}
         >
-          <img src={twitter} alt="twitter" />
+            <Icon icon='lucide:twitter' className="text-txt2 group-hover:text-txt group-focus:text-txt" height={20} width={20}/>
         </a>
 
         <a
           href="https://join.skype.com/invite/oWh1zqCi6fIQ"
-          className="w-5 h-5 hover:-translate-y-1 transition-all"
+          className="w-5 h-5 hover:-translate-y-1 transition-all group"
           target={"_blank"}
         >
-          <img src={skype} alt="skype" />
+            <Icon icon='uil:skype-alt' className="text-txt2 group-hover:text-txt group-focus:text-txt" height={20} width={20}/>
         </a>
       </div>
       <div className="h-[90px] w-[1px] bg-txt2 mx-auto block ::after"></div>
