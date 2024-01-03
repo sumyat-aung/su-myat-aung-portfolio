@@ -104,7 +104,7 @@ const ProjectsPage: React.FC = () => {
           target={"_blank"}
           className="font-fira text-txt text-sm w-[100%] inline-block text-right px-5 mt-10 hover:underline "
         >
-          Check Github
+           Visit GitHub
         </a>
       </div>
     </div>
