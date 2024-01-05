@@ -49,13 +49,13 @@ const Right: React.FC = () => {
           <img src={twitter} alt="twitter" />
         </a>
 
-        <a
+{/*         <a
           href="https://join.skype.com/invite/oWh1zqCi6fIQ"
           className="w-5 h-5 hover:-translate-y-1 transition-all"
           target={"_blank"}
         >
           <img src={skype} alt="skype" />
-        </a>
+        </a> */}
       </div>
       <div className="h-[90px] w-[1px] bg-txt2 mx-auto block ::after"></div>
     </motion.div>
