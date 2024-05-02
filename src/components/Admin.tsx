@@ -9,7 +9,7 @@ const Admin: React.FC = () => {
       href="https://www.github.com/sumyat-aung"
       target="_blank"
     >
-      Designed & built by - Su Myat Aung
+      Built by - Su Myat Aung
     </a>
   );
 };
